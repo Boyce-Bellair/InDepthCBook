@@ -10,12 +10,16 @@ namespace InDepthBookPad
 {
     class Product
     {
-        
+
+        readonly string newField;
+        public string NewField { get {return newField; } }
+
+        public string oldField;
 
         readonly string name;
         public string Name { get { return name; } }
 
-        decimal price;
+        readonly decimal price;
         public decimal Price { get { return price; } }
 
         public Product(string name, decimal price)
